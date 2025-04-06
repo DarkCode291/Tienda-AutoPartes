@@ -1,0 +1,6 @@
+-> Totena – Registro y Mantenimiento
+(1) Registrar nueva venta
+(6) Actualizar información de una venta
+(7) Eliminar una venta registrada
+
+- Lógica para mantener el stock actualizado después de una venta
