@@ -35,4 +35,4 @@ def buscar_x_comprador():
     else:
         print("NO SE ENCONTRO VENTAS CON ESTE NOMBRE")
 
-
+buscar_x_descripcion()
