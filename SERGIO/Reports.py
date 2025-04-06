@@ -20,9 +20,9 @@ def buscar_x_descripcion():
 def buscar_x_fecha():
     date = []
     busc = input("QUE PRODUCTO DESEA BUSCAR POR FECHA: ")
-    for vusc in Query.ventas:
-        if vusc["DATE"].lower() == busc.lower():
-            date.append(vusc)
+    for i in Query.ventas:
+        if i["DATE"].lower() == busc.lower():
+            date.append(i)
     if date:
         print(tabulate(date, headers="keys"))
     else:
@@ -30,10 +30,10 @@ def buscar_x_fecha():
 
 def buscar_x_comprador():
     name = []
-    busc = input("QUE PRODUCTO DESEA BUSCAR POR NOMBRE(ESRIBIR NOMBRE CON APELLIDO): ")
-    for vusc in Query.ventas:
-        if vusc["BUYER NAME"].lower() == busc.lower():
-            name.append(vusc)
+    busc = input("QUE PRODUCTO DESEA BUSCAR POR NOMBRE (ESRIBIR NOMBRE CON APELLIDO): ")
+    for i in Query.ventas:
+        if i["nComprador"].lower() == busc.lower():
+            name.append(i)
     if name:
         print(tabulate(name, headers="keys"))
     else:
