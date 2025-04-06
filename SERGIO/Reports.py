@@ -2,7 +2,7 @@ import Query
 from tabulate import tabulate
 
 def sales():
-    print(tabulate(Query.ventas, headers="keys"))
+    print(tabulate(Query.ventas, headers="keys",tablefmt="fancy_grid",colalign=("center","center","center","center","center","center","center","center")))
 
 
 def buscar_x_descripcion():
@@ -13,28 +13,31 @@ def buscar_x_descripcion():
             decriptions.append(venta)
         
     if decriptions:
-        print(tabulate(decriptions, headers="keys"))
+        print(tabulate(decriptions, headers="keys",tablefmt="fancy_grid",colalign=("center","center","center","center","center","center","center","center")))
     else:
         print("NO SE ENCONTRO VENTAS CON ESTA DESCRIPCION")
 
 def buscar_x_fecha():
-     date = []
-     busc = input("QUE PRODUCTO DESEA BUSCAR POR FECHA: ")
-     for vusc in Query.ventas:
-          if vusc["DATE"].lower() == busc.lower():
-               date.append(vusc)
-     if date:
+    date = []
+    busc = input("QUE PRODUCTO DESEA BUSCAR POR FECHA: ")
+    for vusc in Query.ventas:
+        if vusc["DATE"].lower() == busc.lower():
+            date.append(vusc)
+    if date:
         print(tabulate(date, headers="keys"))
-     else:
+    else:
         print("NO SE ENCONTRO VENTAS CON ESTA FECHA")
 
 def buscar_x_comprador():
-     name = []
-     busc = input("QUE PRODUCTO DESEA BUSCAR POR NOMBRE(ESRIBIR NOMBRE CON APELLIDO): ")
-     for vusc in Query.ventas:
-          if vusc["BUYER NAME"].lower() == busc.lower():
-               name.append(vusc)
-     if name:
+    name = []
+    busc = input("QUE PRODUCTO DESEA BUSCAR POR NOMBRE(ESRIBIR NOMBRE CON APELLIDO): ")
+    for vusc in Query.ventas:
+        if vusc["BUYER NAME"].lower() == busc.lower():
+            name.append(vusc)
+    if name:
         print(tabulate(name, headers="keys"))
-     else:
+    else:
         print("NO SE ENCONTRO VENTAS CON ESTE NOMBRE")
+
+sales()
+
