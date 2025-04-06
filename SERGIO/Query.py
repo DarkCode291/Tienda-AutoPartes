@@ -1,42 +1,42 @@
 ventas = [
     {
-        "IdProducto": 101,
-        "dProducto": "Filtro de aceite",
-        "pnProducto": "FO-123",
-        "cvProducto": 2,
-        "sProducto": 48,
-        "nComprador": "Carlos Pérez",
-        "cComprador": 1002457890,
-        "fVenta": "2025-04-01"
+        "ID": 101,
+        "DESCRIPTION": "Filtro de aceite",
+        "NUM PRODUCT": "FO-123",
+        "AMOUNT": 2,
+        "STOCK": 48,
+        "BUYER NAME": "Carlos Perez",
+        "CC": 1002457890,
+        "DATE": "2025-04-01"
     },
     {
-        "IdProducto": 102,
-        "dProducto": "Pastillas de freno",
-        "pnProducto": "PF-456",
-        "cvProducto": 1,
-        "sProducto": 99,
-        "nComprador": "Laura Gómez",
-        "cComprador": 1003987654,
-        "fVenta": "2025-04-02"
+        "ID": 102,
+        "DESCRIPTION": "Pastillas de freno",
+        "NUM PRODUCT": "PF-456",
+        "AMOUNT": 1,
+        "STOCK": 99,
+        "BUYER NAME": "Laura Gomez",
+        "CC": 1003987654,
+        "DATE": "2025-04-02"
     },
     {
-        "IdProducto": 101,
-        "dProducto": "Filtro de aceite",
-        "pnProducto": "FO-123",
-        "cvProducto": 3,
-        "sProducto": 45,
-        "nComprador": "Andrés Torres",
-        "cComprador": 1005123789,
-        "fVenta": "2025-04-03"
+        "ID": 101,
+        "DESCRIPTION": "Filtro de aceite",
+        "NUM PRODUCT": "FO-123",
+        "AMOUNT": 3,
+        "STOCK": 45,
+        "BUYER NAME": "Andres Torres",
+        "CC": 1005123789,
+        "DATE": "2025-04-03"
     },
     {
-        "IdProducto": 103,
-        "dProducto": "Aceite sintético",
-        "pnProducto": "AS-789",
-        "cvProducto": 5,
-        "sProducto": 20,
-        "nComprador": "Sofía Martínez",
-        "cComprador": 1009876543,
-        "fVenta": "2025-04-04"
+        "ID": 103,
+        "DESCRIPTION": "Aceite sintetico",
+        "NUM PRODUCT": "AS-789",
+        "AMOUNT": 5,
+        "STOCK": 20,
+        "BUYER NAME": "Sofia Martinez",
+        "CC": 1009876543,
+        "DATE": "2025-04-04"
     }
 ]

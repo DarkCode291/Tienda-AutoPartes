@@ -15,7 +15,7 @@ def buscar_x_descripcion():
     if decriptions:
         print(tabulate(decriptions, headers="keys"))
     else:
-        print("NO SE ENCONTRO VENTAS CON ESTE NOMBRE")
+        print("NO SE ENCONTRO VENTAS CON ESTA DESCRIPCION")
 
 def buscar_x_fecha():
      date = []
@@ -26,11 +26,11 @@ def buscar_x_fecha():
      if date:
         print(tabulate(date, headers="keys"))
      else:
-        print("NO SE ENCONTRO VENTAS CON ESTE NOMBRE")
+        print("NO SE ENCONTRO VENTAS CON ESTA FECHA")
 
 def buscar_x_comprador():
      name = []
-     busc = input("QUE PRODUCTO DESEA BUSCAR POR FECHA: ")
+     busc = input("QUE PRODUCTO DESEA BUSCAR POR NOMBRE(ESRIBIR NOMBRE CON APELLIDO): ")
      for vusc in Query.ventas:
           if vusc["BUYER NAME"].lower() == busc.lower():
                name.append(vusc)
