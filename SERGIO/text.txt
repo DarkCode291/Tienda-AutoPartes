@@ -1,0 +1,7 @@
+-> Sergio – Consultas y Reportes
+
+(2) Ver todas las ventas registradas
+(3) Buscar ventas por tipo de producto
+(4) Buscar ventas por fecha
+(5) Buscar ventas por comprador
+(8) Ver stock disponible por producto
