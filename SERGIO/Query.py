@@ -13,4 +13,4 @@ def ver_x_stock():
         print(tabulate(stocks, headers="keys",tablefmt="fancy_grid",colalign=("center","center","center","center","center","center","center","center")))
     else:
         print("NO SE ENCONTRO VENTAS CON ESTE STOCK")
-
+print("")
