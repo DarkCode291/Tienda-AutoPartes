@@ -1,12 +1,13 @@
 from tabulate import tabulate
-import TOTENA.List_Sale as List_Sale
+from TOTENA import Registers
+ 
 def sales():
-    print(tabulate(List_Sale.ventas, headers="keys",tablefmt="fancy_grid",colalign=("center","center","center","center","center","center","center","center")))
+    print(tabulate(Registers.ventas, headers="keys",tablefmt="fancy_grid",colalign=("center","center","center","center","center","center","center","center")))
 
 def ver_x_stock():
     stocks =[]
     stock = int(input("QUE STOCK DESEA BUSCAR: "))
-    for i in List_Sale.ventas:
+    for i in Registers.ventas:
         if i["STOCK"] == stock:
             stocks.append(i)
     if stocks:
