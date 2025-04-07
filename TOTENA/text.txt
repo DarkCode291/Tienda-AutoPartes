@@ -4,3 +4,13 @@
 (7) Eliminar una venta registrada
 
 - Lógica para mantener el stock actualizado después de una venta
+
+
+
+HICE UNOS CAMBIOS RADICALES...
+
+Quite la libreria de ventas que estaba en Query para asi crear la de List_Sale que sea solo para 
+agregar las ventas en los diccionarios (deje la lista que estaba en Query por si algo).
+
+Tambien ya hice el primer punto tuyo xd; que es registrar una venta estaba facil entonces aja.
+ya el resto si te queda ati.
