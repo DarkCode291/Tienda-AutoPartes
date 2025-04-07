@@ -10,7 +10,7 @@
 (7).Eliminar una venta registrada
 (8).Ver stock disponible por producto
 (9).Salir del sistema
-
+ 
 Gestion de ventas de una tienda de autopartes.
 
 
