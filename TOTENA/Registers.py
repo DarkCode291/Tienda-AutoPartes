@@ -16,7 +16,7 @@ compradores = [
         "CEDULA": 1120865580
     }
 ]
-
+from Query import sales
 from tabulate import tabulate
 from colorama import Fore,init, Style; init(autoreset=True)
 import datetime
@@ -61,8 +61,7 @@ def register_sale():
                     ventas.append(register)
                     volver()
                     break
-                    
-                        
+            break
         except ValueError:
             print("ERROR INGRESA VALORES VALIDOS ")
 
@@ -89,6 +88,9 @@ def volver():
     if volver == "S":
         register_sale()
     else:
-        exit()
-    
+        sales(ventas)
+
 register_sale()
+
+
+
