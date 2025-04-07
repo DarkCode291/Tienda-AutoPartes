@@ -5,9 +5,9 @@ from tabulate import tabulate
 def buscar_x_descripcion():
     decriptions = []
     desc = input("QUE PRODUCTO DESEA BUSCAR POR DESCRIPCION: ").lower()
-    for venta in Query.ventas:
-        if venta["DESCRIPTION"] == desc:
-            decriptions.append(venta)
+    for i in Query.ventas:
+        if i["DES"].lower() == desc:
+            decriptions.append(i)
     if decriptions:
         print(tabulate(decriptions, headers="keys",tablefmt="fancy_grid",colalign=("center","center","center","center","center","center","center","center")))
     else:

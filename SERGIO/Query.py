@@ -4,7 +4,7 @@ from tabulate import tabulate
 ventas = [
     {
         "ID": 101,
-        "DESCRIPTION": "Filtro de aceite",
+        "DES": "Filtro de aceite",
         "NUM PRODUCT": "FO-123",
         "AMOUNT": 2,
         "STOCK": 48,
@@ -14,7 +14,7 @@ ventas = [
     },
     {
         "ID": 102,
-        "DESCRIPTION": "Pastillas de freno",
+        "DES": "Pastillas de freno",
         "NUM PRODUCT": "PF-456",
         "AMOUNT": 1,
         "STOCK": 99,
@@ -24,7 +24,7 @@ ventas = [
     },
     {
         "ID": 101,
-        "DESCRIPTION": "Filtro de aceite",
+        "DES": "Filtro de aceite",
         "NUM PRODUCT": "FO-123",
         "AMOUNT": 3,
         "STOCK": 45,
@@ -34,7 +34,7 @@ ventas = [
     },
     {
         "ID": 103,
-        "DESCRIPTION": "Aceite sintetico",
+        "DES": "Aceite sintetico",
         "NUM PRODUCT": "AS-789",
         "AMOUNT": 5,
         "STOCK": 20,
@@ -59,4 +59,3 @@ def ver_x_stock():
     else:
         print("NO SE ENCONTRO VENTAS CON ESTE STOCK")
 
-ver_x_stock()
